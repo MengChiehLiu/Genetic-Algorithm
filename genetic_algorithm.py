@@ -32,12 +32,12 @@ def switch(s):
 
 class GA():  
     # Initialize class with data, rates and mode
-    def __init__(self, train_x, train_y, test_x, test_y, mutuate_rate=0.01, cross_rate=1, mode="A"):
+    def __init__(self, train_x, train_y, test_x, test_y, mutate_rate=0.01, cross_rate=1, mode="A"):
         self.train_x = train_x
         self.train_y = train_y
         self.test_x = test_x
         self.test_y = test_y
-        self.mutuate_rate = mutuate_rate
+        self.mutate_rate = mutate_rate
         self.cross_rate = cross_rate
         self.record = {}
         self.population = {}
@@ -88,11 +88,11 @@ class GA():
         self.fit_list = [list(self.population.values())[0]]
 
 
-    # mutuate followed bit string mutation
-    def mutuate(self, structure):
+    # mutate followed bit string mutation
+    def mutate(self, structure):
         new_structure = structure
         for i, s in enumerate(structure):
-            if random.random() < self.mutuate_rate:
+            if random.random() < self.mutate_rate:
                 new_structure[i] = switch(s)
         return new_structure
 
@@ -113,7 +113,7 @@ class GA():
             key1, key2 = np.random.choice(keys, 2, p=probs).tolist()
             if random.random() < self.cross_rate:
                 new_structure = unhash(key1)[:split_point] + unhash(key2)[split_point:]
-                new_structure = GA.mutuate(self, new_structure)
+                new_structure = GA.mutate(self, new_structure)
                 try:
                     self.population[hash(new_structure)] = self.record[hash(new_structure)]
                 except:
