@@ -16,9 +16,9 @@ from genetic_algorithm import GA
 
 ### Define Model
 ```
-GAModel = GA(train_x, train_y, test_x, test_y, mutuate_rate=0.01, cross_rate=1, mode="A")
+GAModel = GA(train_x, train_y, test_x, test_y, mutate_rate=0.01, cross_rate=1, mode="A")
 ```
-***mutuate_rate*** is the probability that the bit inside a structure mutuate, which is preset at 0.01.  
+***mutate_rate*** is the probability that the bit inside a structure mutate, which is preset at 0.01.  
 ***cross_rate*** is the probability that a crossover happen, which is preset at 1.  
 ***mode*** is the mode for calculating fittness, can be chosen from {"A" : Accuracy, "P" : Precision, "R" : Recall, "F" : F1}, preset at "A".  
 
