@@ -30,9 +30,9 @@ GAModel.initialize(population_size=100)
 
 ### Start Training
 ```
-GAModel.generate(loop=10, early_stop=5)
+GAModel.generate(loop=50, early_stop=5)
 ```
-***loop*** is the number of generations sholud be trained, which is preset at 10.  
+***loop*** is the number of generations sholud be trained, which is preset at 50.  
 ***early_stop*** is how many generations that the fitness value not changing stop training, which is preset at 5 and can be shut down by setting False.  
 
 ### Save and Load Model
