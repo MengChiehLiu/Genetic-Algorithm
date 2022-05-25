@@ -6,6 +6,10 @@ A simple version of genetic algorithm python package, working with pandas.DataFr
 ## Brief Introduction of Genetic Algorithm
 > Genetic Algorithm (GA) is a search-based optimization technique based on the principles of Genetics and Natural Selection. It is frequently used to find optimal or near-optimal solutions to difficult problems which otherwise would take a lifetime to solve. It is frequently used to solve optimization problems, in research, and in machine learning.  
 
+## Genetic Algorithm Structure
+![image](https://user-images.githubusercontent.com/77425545/170243690-6d03b0db-34c5-401a-8a6e-897216fc4971.png)
+image from : https://medium.com/xrpractices/reinforcement-learning-vs-genetic-algorithm-ai-for-simulations-f1f484969c56  
+
 ## Guide
 ### import package
 Download the python script file and save it in the same folder with your code.  
