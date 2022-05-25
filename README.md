@@ -54,4 +54,4 @@ plt.xlabel("generation")
 plt.ylabel("fitness")
 plt.show()
 ```
-![](https://i.imgur.com/tlloX4q.png)
+<img width="293" alt="image" src="https://user-images.githubusercontent.com/77425545/170240660-8534a3d1-e3d2-440e-af98-8478859bae5d.png">
