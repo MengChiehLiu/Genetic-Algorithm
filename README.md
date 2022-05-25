@@ -39,7 +39,7 @@ GAModel.generate(loop=10, early_stop=5)
 GAModel.save_pickle(path="yourFolder/")
 GAModel.load_pickle(path="yourFolder/")
 ```
-***path*** is the folder you want to save or load your model, the model will be save as three file as shown in picture below, fitlist.pkl save the of highest fitness of every generation as a list, population.pkl save the structure and fitness of every model in the population, record.pkl save the structure and fitness of every model of all historical model.  
+***path*** is the folder you want to save or load your model, the model will be save as three file as shown in picture below, fitlist.pkl save the of highest fitness of every generation as a list, population.pkl save the structure and fitness of every model in the population as a dictionary, record.pkl save the structure and fitness of every model of all historical model as a dictionary.  
 
 ![](https://i.imgur.com/FqS1sst.png)
 
