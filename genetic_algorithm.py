@@ -68,6 +68,7 @@ class GA():
 
     # Initialize population
     def initialize(self, population_size=100):
+        print("Initializing......")
         dimension = len(self.train_x.columns)
         for i in tqdm(range(population_size)):
             while True:
@@ -124,6 +125,7 @@ class GA():
 
     # Generate offsprings, run untill meeting criteria
     def generate(self, loop = 50, early_stop = 5):
+        print("Generating......")
         stop_signal = 0
         prev_best_fit = list(self.population.values())[0]
         for i in tqdm(range(loop)):
