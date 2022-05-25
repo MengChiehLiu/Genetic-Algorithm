@@ -8,7 +8,7 @@ A simple version of genetic algorithm python package, which followed elite strat
 
 ## Guide
 ### import package
-Download the python script file and save it in the same path of your code.  
+Download the python script file and save it in the same folder with your code.  
 ```
 from genetic_algorithm import GA
 ```
