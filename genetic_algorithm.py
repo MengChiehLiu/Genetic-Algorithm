@@ -32,7 +32,7 @@ def switch(s):
 
 class GA():  
     # Initialize class with data, rates and mode
-    def __init__(self, train_x, train_y, test_x, test_y, mutuate_rate=0.15, cross_rate=0.99, mode="A"):
+    def __init__(self, train_x, train_y, test_x, test_y, mutuate_rate=0.01, cross_rate=1, mode="A"):
         self.train_x = train_x
         self.train_y = train_y
         self.test_x = test_x
