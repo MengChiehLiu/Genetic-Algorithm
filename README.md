@@ -42,3 +42,16 @@ GAModel.load_pickle(path="yourFolder/")
 ***path*** is the folder you want to save or load your model, the model will be save as three file as shown in picture below, fitlist.pkl save the of highest fitness of every generation as a list, population.pkl save the structure and fitness of every model in the population, record.pkl save the structure and fitness of every model of all historical model.  
 
 ![](https://i.imgur.com/FqS1sst.png)
+
+### Draw Training History
+You can also draw the training history with the help of other package, here is a simple demonstration.  
+```
+import matplotlib.pyplot as plt
+fit_list = GAModel.fit_list
+plt.plot(fit_list)
+plt.title("Genetic Algorithm")
+plt.xlabel("generation")
+plt.ylabel("fitness")
+plt.show()
+```
+![](https://i.imgur.com/tlloX4q.png)
